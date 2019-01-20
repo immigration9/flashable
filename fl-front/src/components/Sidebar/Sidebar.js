@@ -1,5 +1,5 @@
 import React, { PureComponent } from 'react'
-import { SidebarWrapper, CloseBtn } from './SidebarStyle'
+import { SidebarWrapper, CloseBtn, MenuWrapper, MenuItem } from './SidebarStyle'
 import CloseIcon from '../../assets/icon/close.svg'
 
 class Sidebar extends PureComponent {
@@ -19,6 +19,11 @@ class Sidebar extends PureComponent {
         <CloseBtn sidebarOn={sidebarOn} onClick={this.onCloseClick}>
           <CloseIcon width={24} height={24}/>
         </CloseBtn>
+        <MenuWrapper sidebarOn={sidebarOn}>
+          <MenuItem>
+            About
+          </MenuItem>
+        </MenuWrapper>
       </SidebarWrapper>
     )
   }

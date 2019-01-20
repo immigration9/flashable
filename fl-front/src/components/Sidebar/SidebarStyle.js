@@ -40,6 +40,21 @@ export const SidebarOpenBtn = styled.button`
   z-index: 300;
 `
 
+export const MenuWrapper = styled.div`
+  display: ${props => props.sidebarOn ? 'flex': 'none'};
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  color: white;
+`
+
+export const MenuItem = styled.button`
+  font-size: 24px;
+  border: none;
+  
+`
+
 export const CloseBtn = styled.button`
   display: ${props => props.sidebarOn ? "visible" : "none"};
   position: absolute;
